@@ -2,3 +2,36 @@ h1 {
     text-align: center;
     font-size: 40px;
 }
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    background-image: url(icons/store.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+body{
+    background: #e4eef3;
+    font-family: 'Cabin Sketch', cursive;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#Cookie {
+    margin-top: 100px;
+    margin-left: -86px;
+    width: 400px;
+    background-image: url('https://github.com/CharlotteMoriarty/cookie-clicker/blob/master/icons/Cookie-PNG-180x180.png?raw=true');
+}
+button {
+    background: #f3e9e4;
+    height: 80px;
+    width: 450px;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+#cookies, #cps {
+    margin-top: 150px;
+    width: 400px;
+}
