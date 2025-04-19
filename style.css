@@ -31,6 +31,9 @@ button {
     margin-top: 150px;
     width: 400px;
 }
+#shop {
+    margin-left: 50px;
+}
 #cursor {
     background-image: url(.images/cursorArrow.png);
     background-repeat: no-repeat;
