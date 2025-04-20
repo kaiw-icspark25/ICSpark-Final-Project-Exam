@@ -18,7 +18,7 @@ element.addEventListener('click',function() {money+=clicker});
 //manufacturer makes prices and values 
 function manufacturer(){ 
     document.getElementById("cookies").innerHTML="Cookies: "+Math.floor(money);
-    money+=cps/10
+    money+=cps
     document.getElementById("cps").innerHTML="CPS: "+ cps.toFixed(1);
     cursorPrice=Math.floor((10*Math.pow(multiply, cursorBought)));
     grannyPrice=Math.floor((15*Math.pow(multiply, grannyBought)));
