@@ -18,7 +18,7 @@ element.addEventListener('click',function() {money+=clicker});
 //manufacturer makes prices and values 
 function manufacturer(){ 
     document.getElementById("cookies").innerHTML="Cookies: "+Math.floor(money);
-    money+=cps/100
+    money+=cps/10
     document.getElementById("cps").innerHTML="CPS: "+ cps.toFixed(1);
     cursorPrice=Math.floor((10*Math.pow(multiply, cursorBought)));
     grannyPrice=Math.floor((15*Math.pow(multiply, grannyBought)));
@@ -36,35 +36,35 @@ manufacturer();
 function cursor(){
     if (money>=cursorPrice){
         money=money-cursorPrice;
-        cps+=0.1;
+        cps=cps+0.1;
         cursorBought=cursorBought+1;
     }
  }
  function granny(){
     if (money>=grannyPrice){
         money=money-grannyPrice;
-        cps+=1;
+        cps=cps+1;
         grannyBought=grannyBought+1;
     }
  }
  function farm(){
     if (money>=farmPrice){
         money=money-farmPrice;
-        cps+=25;
+        cps=cps+25;
         farmBought=farmBought+1;
     }
  }
  function bakery(){
     if (money>=bakeryPrice){
         money=money-bakeryPrice;
-        cps+=35;
+        cps=cps+35;
         bakeryBought=bakeryBought+1;
     }
  }
  function mine(){
     if(money>=minePrice){
         money=money-mineBought
-        cps+=100
+        cps=cps+100
         mineBought=mineBought+1
     }
 
