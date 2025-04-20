@@ -18,7 +18,7 @@ element.addEventListener('click',function() {money+=clicker});
 //manufacturer makes prices and values 
 function manufacturer(){ 
     document.getElementById("cookies").innerHTML="Cookies: "+Math.floor(money);
-    money+=cps
+    money+=cps/10
     document.getElementById("cps").innerHTML="CPS: "+ cps.toFixed(1);
     cursorPrice=Math.floor((10*Math.pow(multiply, cursorBought)));
     grannyPrice=Math.floor((15*Math.pow(multiply, grannyBought)));
@@ -28,8 +28,8 @@ function manufacturer(){
     document.getElementById("cursor").innerHTML="Cursor "+"price:"+ cursorPrice + " Speed:0.1 CPS "+ "Owned: " + cursorBought;
     document.getElementById("granny").innerHTML="Granny "+"price:"+ grannyPrice + " Speed:1 CPS "+ "Owned: " + grannyBought;
     document.getElementById("farm").innerHTML="Farm "+"price:"+ farmPrice + " Speed:25 CPS "+ "Owned: " + farmBought;
-    document.getElementById("bakery").innerHTML="Bakery "+"price:"+ bakeryPrice + " Speed:35 CPS "+ "Owned: " + bakeryBought;
-    document.getElementById("mine").innerHTML="Mine "+"price:"+ minePrice + " Speed:100 CPS "+ "Owned: " + mineBought;
+    document.getElementById("bakery").innerHTML="Bakery "+"price:"+ bakeryPrice + " Speed:100 CPS "+ "Owned: " + bakeryBought;
+    document.getElementById("mine").innerHTML="Mine "+"price:"+ minePrice + " Speed:250 CPS "+ "Owned: " + mineBought;
     setTimeout(manufacturer,100);
 }
 manufacturer();
@@ -57,14 +57,14 @@ function cursor(){
  function bakery(){
     if (money>=bakeryPrice){
         money=money-bakeryPrice;
-        cps=cps+35;
+        cps=cps+100;
         bakeryBought=bakeryBought+1;
     }
  }
  function mine(){
     if(money>=minePrice){
         money=money-mineBought
-        cps=cps+100
+        cps=cps+250;
         mineBought=mineBought+1
     }
 
